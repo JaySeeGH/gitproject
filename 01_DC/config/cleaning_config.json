@@ -1,0 +1,18 @@
+{
+  "drop_empty_cols": true,
+  "drop_empty_rows": true,
+  "drop_na": true,
+  "remove_duplicates": true,
+  "data_type_corrections": true,
+  "fill_mean": true,
+  "logging":
+    {
+      "drop_empty_cols": true,
+      "drop_empty_rows": true,
+      "drop_na": true,
+      "remove_duplicates": true,
+      "data_type_corrections": true,
+      "fill_mean": true
+    }
+
+}
