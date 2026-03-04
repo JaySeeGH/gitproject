@@ -1,8 +1,9 @@
 __title__ = "Data Cleaning Application"
 __author__ = "Jens"
-__version_ = "0.1"
+__version_ = "0.1.1"
 __doc__ = """
 The Application is designed to clean an input CSV and export an new cleaned CSV file
+Viele Schritte, um eine CSV zu bereinigen
 """
 
 import json
