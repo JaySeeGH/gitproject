@@ -1,0 +1,4 @@
+   Order ID  ...                   Purchase Address
+3  176559.0  ...  682 Chestnut St; Boston; MA 02215
+
+[1 rows x 6 columns]
