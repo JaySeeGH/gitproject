@@ -1,4 +1,4 @@
-   Order ID  ...                   Purchase Address
-3  176559.0  ...  682 Chestnut St; Boston; MA 02215
+   Order ID                     Product  ...    City      ZIP
+3  176559.0  Bose SoundSport Headphones  ...  Boston  MA02215
 
-[1 rows x 6 columns]
+[1 rows x 8 columns]

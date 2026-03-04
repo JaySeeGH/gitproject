@@ -65,6 +65,11 @@ class DataCleaner:
         if self.dev:
             print("3:",df.shape)
 
+        if config["split_cols"]:
+            df = self.split_cols(df,config["split_col_source"],config["split_cols_dest_list"], config["split_cols_dest_index"],config["split_cols_sep"],config["logging"]["split_cols"])
+        if self.dev:
+            print("3:",df.shape)
+
         if config["drop_na"]:
             df = self.drop_na(df,config["logging"]["drop_na"])
         if self.dev:
@@ -104,6 +109,32 @@ class DataCleaner:
         df_cleaned = df.dropna(axis=1, how='all')
         return df_cleaned
 
+    def split_cols(self,df,split_col_source,split_cols_dest_list,split_cols_dest_index,split_sep=",",logs=False):
+        # Stufe 1 - Spalte wird gesplitted und als Einzelspalten angehängt - okay
+        # Stufe 2 - Es wird nur die gewünschte Spalte zusätzlich erzeugt und der Rest wird wieder zusammengesetzt - offen
+
+        # Stufe 2
+        # Spalte EXT, die übrig bleiben soll, speichern
+        # andere Spalten OTHERS mergen
+        #
+
+
+        # Anzahl der Spalten ermitteln
+        split_example = str(df[split_col_source][2])
+        splitting_example = split_example.split(split_sep)
+        count_new_cols = len(splitting_example)
+        print(count_new_cols)
+        #df_splitted = df[split_col_source]
+
+
+        # Stufe 1
+        df[split_cols_dest_list] = df[split_col_source].replace("\"","").replace(r'\s*(.*?)\s*', r'\1', regex=True).str.split(split_sep, expand=True)
+
+        if logs:
+            self.write_file_logs("split_cols", count_new_cols) # df[['Purchase Address', 'ZIP']]
+
+        return df
+
     def drop_empty_rows(self, df, logs=False):
         empty_rows = df[df.isna().all(axis=1)]
         #print(empty_rows)
@@ -133,6 +164,7 @@ class DataCleaner:
         return df
 
     def fill_mean(self,df,logs=False):
+
         if logs:
             self.write_file_logs("fill_mean", "XXXXXXX")
         return df

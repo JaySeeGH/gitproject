@@ -1,6 +1,11 @@
 {
   "drop_empty_cols": true,
   "drop_empty_rows": true,
+  "split_cols": true,
+  "split_col_source": "Purchase Address",
+  "split_cols_dest_index": -1,
+  "split_cols_dest_list": ["Purchase Address","City","ZIP"],
+  "split_cols_sep": ",",
   "drop_na": true,
   "remove_duplicates": true,
   "data_type_corrections": true,
@@ -9,10 +14,10 @@
     {
       "drop_empty_cols": true,
       "drop_empty_rows": true,
+      "split_cols": true,
       "drop_na": true,
       "remove_duplicates": true,
       "data_type_corrections": true,
       "fill_mean": true
     }
-
 }
