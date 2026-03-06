@@ -3,6 +3,7 @@
   "drop_empty_rows": true,
   "split_cols": true,
   "split_col_source": "Purchase Address",
+  "split_col_source_title": "Title",
   "split_cols_dest_index": -1,
   "split_cols_dest_list": ["Purchase Address","City","ZIP"],
   "split_cols_sep": ",",

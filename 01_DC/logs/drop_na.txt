@@ -1,4 +1,14 @@
-   Order ID Product  Quantity Ordered  ...  Purchase Address    City      ZIP
-4  176559.0     NaN               1.0  ...     682ChestnutSt  Boston  MA02215
+        Order ID  Product  Quantity Ordered  ...  Purchase Address  City   ZIP
+519     Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+1149    Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+1155    Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+2878    Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+2893    Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+...          ...      ...               ...  ...               ...   ...   ...
+185164  Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+185551  Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+186563  Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+186632  Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
+186738  Order ID  Product  Quantity Ordered  ...  Purchase Address  None  None
 
-[1 rows x 8 columns]
+[355 rows x 8 columns]

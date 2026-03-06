@@ -1,4 +1,14 @@
-   Order ID                     Product  ...    City      ZIP
-3  176559.0  Bose SoundSport Headphones  ...  Boston  MA02215
+       Order ID                     Product  ...            City        ZIP
+31       176585  Bose SoundSport Headphones  ...          Boston   MA 02215
+1302     177795    Apple Airpods Headphones  ...         Seattle   WA 98101
+1684     178158        USB-C Charging Cable  ...   San Francisco   CA 94016
+3805     180207    Apple Airpods Headphones  ...     Los Angeles   CA 90001
+4196     180576    Lightning Charging Cable  ...          Dallas   TX 75001
+...         ...                         ...  ...             ...        ...
+184940   257530        USB-C Charging Cable  ...   San Francisco   CA 94016
+186173   258715    Lightning Charging Cable  ...        Portland   OR 97035
+186508   259035            27in FHD Monitor  ...   San Francisco   CA 94016
+186782   259296    Apple Airpods Headphones  ...          Dallas   TX 75001
+186785   259297    Lightning Charging Cable  ...          Boston   MA 02215
 
-[1 rows x 8 columns]
+[264 rows x 8 columns]

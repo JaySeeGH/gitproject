@@ -5,9 +5,9 @@ os.chdir(Path(__file__).parent)
 from src.data_cleaner import DataCleaner
 
 def main():
-    cleaner = DataCleaner('config/cleaning_config.json',  dev=True)
+    cleaner = DataCleaner('config/cleaning_config.json')
     cleaner.delete_files() # if delete
-    cleaned_data = cleaner.clean_data("./data/my_data_test3.csv","cleaned/", "my_data_output_test5.csv",sep=",")
+    cleaned_data = cleaner.clean_data("./data/my_data.csv","cleaned/", "my_data_output_test.csv",sep_in=",",sep_out=";")
     if cleaned_data:
         print("Data cleaned successfully")
 
